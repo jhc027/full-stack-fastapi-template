@@ -168,4 +168,8 @@ volumes:
 networks:
   traefik-public:
     # Allow setting it to false for testing
-    external: true
+    # external: true
+    name: podman
+
+  default:
+    name: full-stack-fastapi-template_default
